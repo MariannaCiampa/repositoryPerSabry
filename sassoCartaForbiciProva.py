@@ -28,22 +28,19 @@ while giri < 3:
         mossa_segreta == 3 and mossa_utente == 2):
         print("Ah-ah hai perso!")
         punteggio_computer +=1
-        punteggio_utente=0
 
     elif mossa_segreta == mossa_utente:
         print("Pareggio!")
-        punteggio_utente = 0
-        punteggio_computer=0
+
     else:
         print("Wow hai vinto!")
         punteggio_utente += 1
-        punteggio_computer=0
 
 
 print ("Fine del gioco!")
 if punteggio_utente > punteggio_computer:
     print("Questa volta hai vinto tu... aspetto la rivincita!")
-elif punteggio_computer < punteggio_utente:
+elif punteggio_computer > punteggio_utente:
     print("Hai persooooo!Ah-ah-ah!")
 elif punteggio_computer == punteggio_utente:
     print("Wow abbiamo pareggiato!")
